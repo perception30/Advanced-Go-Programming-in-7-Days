@@ -8,15 +8,16 @@ import (
 
 // Variable declarations
 var atom int
+
 const monad = "monad"
 
 // Know when init is called
-func init()  {
+func init() {
 	atom = 1
 }
 
 // function declarations
-func calculateCeil(input float64) (result float64, err error)  {
+func calculateCeil(input float64) (result float64, err error) {
 	// Usage of math methods
 	return math.Ceil(input), nil
 }
@@ -26,13 +27,18 @@ type ByteSlice []byte
 type Bytes = ByteSlice
 
 // main
-func main()  {
+func main() {
 	// some basic printf flags
 	fmt.Sprintf("%d\n", atom)
 	fmt.Sprintf("%s", monad)
 
 	// short declaration assignment
 	stringSlice := [3]string{"1", "2", "3"}
+	intSlice := []int{1, 2, 8}
+
+	fmt.Println(' ')
+
+	fmt.Print(intSlice)
 
 	// basic slice operations
 	fmt.Println(len(stringSlice))
@@ -51,7 +57,7 @@ func main()  {
 		if counter > 1000 {
 			break
 		} else {
-			counter +=1
+			counter += 1
 		}
 	}
 
@@ -87,7 +93,7 @@ func main()  {
 		hasNext() bool
 	}
 
-	type Guard struct {}
+	type Guard struct{}
 
 	// Channels
 	ch := make(chan Guard, 1)
