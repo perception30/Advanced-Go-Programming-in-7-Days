@@ -40,6 +40,10 @@ func main() {
 
 	fmt.Print(intSlice)
 
+    intSlice := []int{1,6,8}
+
+    fmt.Print(intSlice)
+
 	// basic slice operations
 	fmt.Println(len(stringSlice))
 
